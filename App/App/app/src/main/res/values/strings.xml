@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="title_activity_locate_me">Map</string>
+    <string name="send">Send</string>
+</resources>

@@ -1,0 +1,101 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+text-align: center;
+  font-weight: 200;
+}
+.background{
+  align-items: center;
+  width: 640px;
+  height: 960px;
+  background-color:lightskyblue;
+  position: absolute;
+}
+.welcome_title{
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  text-transform: uppercase;
+  top:320px;
+}
+.title{
+  padding-bottom: 50px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 100;
+  position: relative;
+  text-transform: uppercase;
+}
+.welcome_p{
+  
+  position: relative;
+  top:700px;
+  
+  
+}
+.welcome_img{
+  position: relative;
+  
+}
+.rest{
+  right: 130px;
+}
+#main_img{
+  
+  top:350px;
+  left:230px;
+  height: 120px;
+  width: 120px;
+}
+#table{
+  
+  
+  top:350px;
+  left:-70px;
+}
+#beer{
+  top:350px;
+  right: -270px;
+}
+.map{
+  border-color: lightskyblue;
+  border-style: groove;
+  position: relative;
+  top: 2.5px;
+  left 0;
+  
+  width: 635px;
+  height: 955px;
+  
+}
+#locate{
+  position: absolute;
+  bottom: 150px;
+  right: 20px;
+  z-index: 100;
+  
+}
+#send{
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  z-index: 100;
+  
+}
+.sss{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-color: black;
+  border-top-style: solid;
+  border-top-width:thin;
+}
+.texxt{
+  display: inline;
+  position: absolute;
+  top:20px;
+  left: 10px;
+}
+.boxes{
+  height: 30px;
+  width: 30px;
+}
