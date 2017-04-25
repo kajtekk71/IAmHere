@@ -20,7 +20,7 @@ public class Choose extends AppCompatActivity {
 
                 Intent i = new Intent(
                         getApplicationContext(),
-                        Choose.class);
+                        Friends.class);
                 i.putExtra("fac",true);
                 startActivity(i);
             }
@@ -32,7 +32,7 @@ public class Choose extends AppCompatActivity {
 
                 Intent i = new Intent(
                         getApplicationContext(),
-                        Choose.class);
+                        Friends.class);
                 i.putExtra("sms",true);
                 startActivity(i);
             }
@@ -44,7 +44,7 @@ public class Choose extends AppCompatActivity {
 
                 Intent i = new Intent(
                         getApplicationContext(),
-                        Choose.class);
+                        Friends.class);
                 i.putExtra("mail",true);
                 startActivity(i);
             }
