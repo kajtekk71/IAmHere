@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView android:id="@+id/imgIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="60dp"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:onClick="contactChosen"/>
+
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:paddingLeft="60dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:onClick="contactChosen"
+        />
+
+</FrameLayout>

@@ -69,7 +69,7 @@ public class LocateMe extends FragmentActivity implements OnMapReadyCallback,
             @Override
             public void onClick(View v) {
                 AlertDialog alertDialog = new AlertDialog.Builder(LocateMe.this).create();
-                alertDialog.setTitle("Alert");
+     3           alertDialog.setTitle("Alert");
                 alertDialog.setMessage("Alert message to be shown");
                 alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                         new DialogInterface.OnClickListener() {

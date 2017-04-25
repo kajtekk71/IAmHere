@@ -40,7 +40,9 @@
             android:name=".LocateMe"
             android:label="@string/title_activity_locate_me" />
         <activity android:name=".Choose" />
-        <activity android:name=".Friends"></activity>
+        <activity android:name=".Friends" />
+        <activity android:name=".Message" />
+        <activity android:name=".Sent"></activity>
     </application>
 
 </manifest>

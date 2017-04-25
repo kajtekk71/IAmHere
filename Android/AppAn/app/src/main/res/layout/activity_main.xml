@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light"
+    android:background="@color/common_google_signin_btn_text_dark_default"
     tools:context="com.example.okti.appan.MainActivity"
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
@@ -14,54 +14,6 @@
         android:layout_height="495dp"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp">
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/guitar"
-            tools:layout_editor_absoluteX="304dp"
-            tools:layout_editor_absoluteY="199dp"
-            android:layout_below="@+id/textView6"
-            android:layout_alignLeft="@+id/imageView13"
-            android:layout_alignStart="@+id/imageView13" />
-
-        <ImageView
-            android:id="@+id/imageView11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/dj"
-            tools:layout_editor_absoluteX="160dp"
-            tools:layout_editor_absoluteY="411dp"
-            android:layout_alignTop="@+id/imageView12"
-            android:layout_toRightOf="@+id/guideline3"
-            android:layout_toEndOf="@+id/guideline3"
-            android:layout_marginLeft="18dp"
-            android:layout_marginStart="18dp" />
-
-        <ImageView
-            android:id="@+id/imageView12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/beer"
-            tools:layout_editor_absoluteX="29dp"
-            tools:layout_editor_absoluteY="199dp"
-            android:layout_centerVertical="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="23dp"
-            android:layout_marginEnd="23dp" />
-
-        <ImageView
-            android:id="@+id/imageView13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/balloon"
-            tools:layout_editor_absoluteX="160dp"
-            tools:layout_editor_absoluteY="64dp"
-            android:layout_below="@+id/guideline3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="64dp" />
 
         <TextView
             android:id="@+id/textView5"
@@ -84,6 +36,7 @@
             android:layout_centerVertical="true"
             app:srcCompat="@drawable/smartphone"
             tools:layout_editor_absoluteX="148dp"
+            android:background="?android:attr/selectableItemBackground"
             tools:layout_editor_absoluteY="199dp" />
 
         <TextView
@@ -107,5 +60,52 @@
             app:layout_constraintGuide_begin="20dp"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/guitar"
+            tools:layout_editor_absoluteX="304dp"
+            tools:layout_editor_absoluteY="199dp"
+            android:layout_above="@+id/textView5"
+            android:layout_toLeftOf="@+id/textView5"
+            android:layout_toStartOf="@+id/textView5"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/balloon"
+            tools:layout_editor_absoluteX="160dp"
+            tools:layout_editor_absoluteY="64dp"
+            android:layout_marginTop="61dp"
+            android:layout_below="@+id/guideline3"
+            android:layout_alignLeft="@+id/imageButton4"
+            android:layout_alignStart="@+id/imageButton4" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/beer"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="199dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginEnd="23dp"
+            android:layout_above="@+id/textView5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Click on Phone Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
