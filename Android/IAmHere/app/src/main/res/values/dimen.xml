@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_size">60sp</dimen>
+    <dimen name="group_height">60dp</dimen>
+    <dimen name="group_item_size">30dp</dimen>
+    <dimen name="user_tex_size">18sp</dimen>
+    <dimen name="text_size_small">30sp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="message_base_height">160dp</dimen>
+    <dimen name="select_group_size">40dp</dimen>
+</resources>

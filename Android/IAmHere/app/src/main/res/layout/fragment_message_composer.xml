@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.asd.iamhere.MessageComposerFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ActionBarDark"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/message_compose"
+        app:titleTextColor="@color/colorWhite"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:id="@+id/checkbox_image"
+        android:theme="@style/BlackCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:checked="false"
+        android:text="@string/include_image"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_below="@+id/group_selection"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/group_selection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/select_group_size"
+        android:layout_below="@+id/toolbar2"
+        android:background="@color/colorGray"
+        android:text="@string/select_groups"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/user_tex_size"
+        android:textStyle="italic" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkbox_image">
+
+        <RadioButton
+            android:id="@+id/message_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorBlack"
+            android:checked="true"
+            android:text="@string/message" />
+
+        <RadioButton
+            android:id="@+id/email_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorBlack"
+            android:checked="false"
+            android:text="@string/emailNormal" />
+
+        <RadioButton
+            android:id="@+id/messenger_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorBlack"
+            android:text="@string/Messenger" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/radio_group"/>
+    <EditText
+        android:id="@+id/message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/divider1"
+        android:gravity="top"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="@string/additional_hint"
+        android:inputType="textMultiLine"
+        android:textColor="@color/colorBlack"
+        android:layout_above="@+id/text_message_base" />
+
+    <TextView
+        android:id="@+id/text_message_base"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send_message_button"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorGray" />
+
+    <Button
+        android:id="@+id/send_message_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/checkbox_image" />
+
+</RelativeLayout>

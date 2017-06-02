@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/parent_edit"
+        android:title="@string/edit" />
+    <item
+        android:id="@+id/add_user"
+        android:title="Add user"/>
+    <item
+        android:id="@+id/add_from_contacts"
+        android:title="Add from contacts"/>
+    <item
+        android:id="@+id/parent_delete"
+        android:title="@string/delete" />
+</menu>
