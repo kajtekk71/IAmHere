@@ -17,11 +17,20 @@ public class MessageConstructor {
         return screenshot;
     }
     public MessageConstructor setCoordinates(Location location) {
+        //failsafe
+        double lattitude = 5;
+        double longtitude = 5;
+        if(location!=null)
+        {
+            lattitude = location.getLatitude();
+            longtitude = location.getLongitude();
+        }
+        //eof failsafe
         StringBuilder sb = new StringBuilder();
         sb.append("Coordinates: \n");
-        sb.append("Lat: " + Double.toString(location.getLatitude()) + "\n");
-        sb.append("Long: " + Double.toString(location.getLongitude()) + "\n");
-        String mapLink = "http://maps.google.com/maps?q=" + Double.toString(location.getLatitude()) + "," + Double.toString(location.getLongitude());
+        sb.append("Lat: " + Double.toString(lattitude) + "\n");
+        sb.append("Long: " + Double.toString(longtitude) + "\n");
+        String mapLink = "http://maps.google.com/maps?q=" + Double.toString(lattitude) + "," + Double.toString(longtitude);
         sb.append("Link to maps: " + mapLink + "\n");
         coordinates = sb.toString();
         return this;

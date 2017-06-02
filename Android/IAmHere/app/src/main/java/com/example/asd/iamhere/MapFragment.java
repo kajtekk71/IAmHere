@@ -114,6 +114,8 @@ public class MapFragment extends Fragment {
                 send.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        if(currentLocation==null)
+                            Toast.makeText(getActivity(),"Location is null, setting false coordinates.",Toast.LENGTH_SHORT).show();
                         MessageConstructor messageConstructor = new MessageConstructor();
                         messageConstructor.setCoordinates(currentLocation).setAddress(getPrintableAddress()).setScreenshot(snapshot);
                         MessageComposerFragment messageComposerFragment = new MessageComposerFragment();
