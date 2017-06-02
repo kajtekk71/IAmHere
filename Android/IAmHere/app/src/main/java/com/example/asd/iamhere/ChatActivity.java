@@ -51,10 +51,10 @@ public class ChatActivity extends AppCompatActivity implements FirebaseUserAuthe
         auth.signInWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isComplete())
+                if(task.isComplete() && auth.getCurrentUser()!=null)
                     Toast.makeText(ChatActivity.this,"Logged in successfully!",Toast.LENGTH_SHORT).show();
                 else
-                    Toast.makeText(ChatActivity.this,"Failed to log in",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ChatActivity.this,"Failed to log in.",Toast.LENGTH_SHORT).show();
             }
         });
     }

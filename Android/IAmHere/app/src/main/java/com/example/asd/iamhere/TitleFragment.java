@@ -51,7 +51,8 @@ public class TitleFragment extends Fragment {
                 if(login.getText().toString()!="" && isValidEmailAddress(login.getText().toString()) && password.getText().toString()!="")
                 {
                     handler.loginWithCredentials(login.getText().toString(),password.getText().toString());
-                    getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.chatActivity,new UserPanelFragment()).commit();
+                    if(!handler.getLoggedUser().equals(""))
+                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.chatActivity,new UserPanelFragment()).commit();
                 }
                 else
                     Toast.makeText(getActivity(),"Type valid email and password.",Toast.LENGTH_SHORT).show();
